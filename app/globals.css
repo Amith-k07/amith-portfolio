@@ -12,15 +12,9 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 110px;
 }
 
 body {
@@ -34,6 +28,7 @@ body {
   color: #f7f7f5;
 }
 
+/* Scroll reveal */
 .reveal {
   animation: reveal 720ms ease both;
   animation-timeline: view();
@@ -52,26 +47,7 @@ body {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  .reveal {
-  animation: reveal 0.8s ease-out both;
-}
-
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}}
+/* Floating elements */
 .float-card {
   animation: float 5s ease-in-out infinite;
 }
@@ -91,7 +67,15 @@ body {
   }
 }
 
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 110px;
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .reveal,
+  .float-card,
+  .float-card-slow {
+    animation: none;
+  }
 }

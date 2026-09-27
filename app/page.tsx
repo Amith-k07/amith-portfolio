@@ -262,7 +262,7 @@ export default function Home() {
           </div>
 
           {/* HERO PHOTO */}
-          <div className="relative mx-auto h-[620px] w-full max-w-[560px] lg:h-[720px]">
+          <div className="relative mx-auto h-[430px] w-full max-w-[560px] sm:h-[520px] lg:h-[720px]">
 
             {/* Green shape */}
             <div className="absolute bottom-8 right-[5%] h-[27rem] w-[23rem] rounded-[48%_52%_42%_58%/55%_44%_56%_45%] bg-[#e3eee4] md:h-[34rem] md:w-[28rem]" />
@@ -274,7 +274,7 @@ export default function Home() {
             <span className="absolute left-[7%] top-[58%] h-2.5 w-2.5 rounded-full bg-[#78947d]" />
 
             {/* Person */}
-            <div className="absolute inset-x-0 bottom-0 z-10 h-[650px]">
+            <div className="absolute inset-x-0 bottom-0 z-10 h-[450px] sm:h-[540px] lg:h-[650px]">
               <Image
                 src="/profile-cutout.png"
                 alt="Kolla P S N V Amith Kumar"
@@ -286,7 +286,7 @@ export default function Home() {
             </div>
 
             {/* Floating card 1 */}
-            <div className="float-card absolute left-[-2%] top-[40%] z-20 rounded-2xl border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_50px_rgba(0,0,0,0.09)] backdrop-blur">
+            <div className="float-card absolute left-[1%] top-[38%] z-20 rounded-2xl px-3 py-3 text-sm sm:left-[-2%] sm:px-5 sm:py-4  border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_50px_rgba(0,0,0,0.09)] backdrop-blur">
               <div className="flex gap-3">
                 <span className="text-lg text-[#78947d]">✦</span>
                 <div>
@@ -298,7 +298,7 @@ export default function Home() {
             </div>
 
             {/* Floating card 2 */}
-            <div className="float-card-slow absolute right-[-1%] top-[57%] z-20 rounded-2xl border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_50px_rgba(0,0,0,0.09)] backdrop-blur">
+            <div className="float-card-slow absolute right-[-1%] top-[58%] z-20 rounded-2xl border border-black/10 bg-white/90 px-5 py-4 shadow-[0_18px_50px_rgba(0,0,0,0.09)] backdrop-blur">
               <p className="text-[10px] uppercase tracking-[0.18em] text-[#999]">
                 Focus
               </p>
